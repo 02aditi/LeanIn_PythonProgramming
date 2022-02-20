@@ -1,0 +1,14 @@
+
+import turtle
+tkk = turtle.Turtle()
+
+tkk.begin_fill()
+tkk.forward(200)
+tkk.left(120)
+tkk.forward(200)
+tkk.left(120)
+tkk.forward(200)
+tkk.left(120)
+tkk.end_fill()
+      
+turtle.done()
