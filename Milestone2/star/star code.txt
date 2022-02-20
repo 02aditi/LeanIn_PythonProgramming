@@ -1,0 +1,10 @@
+import turtle
+
+ws = turtle.Screen()
+starTurtle = turtle.Turtle()
+
+# executing loop 5 times for a star
+for i in range(5):
+		starTurtle.forward(100)
+		starTurtle.right(144)
+
