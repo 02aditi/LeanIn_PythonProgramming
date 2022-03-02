@@ -1,0 +1,14 @@
+ Running Sum of 1d Array
+
+class Solution:
+    def runningSum(self, nums: List[int]) -> List[int]:
+         results = []
+        
+
+         for i, num in enumerate(nums):
+            if i == 0:
+                results.append(num)
+            else:
+                results.append(results[i - 1] + nums[i])
+            
+         return results
