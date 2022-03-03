@@ -1,0 +1,11 @@
+check-if-the-sentence-is-pangram
+
+class Solution:
+    def checkIfPangram(self, sentence: str) -> bool:
+         if len(sentence)<26:
+            return False
+         if len(Counter(sentence).keys())<26:
+            return False
+         else:
+            return True
+        
