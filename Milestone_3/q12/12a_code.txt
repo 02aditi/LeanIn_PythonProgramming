@@ -1,0 +1,28 @@
+counting-words-with-a-given-prefix
+
+class Solution:
+    def prefixCount(self, words: List[str], pref: str) -> int:
+        count = 0;
+        
+        for word in words:
+            
+           
+            if len ( word ) < len ( pref ):
+                continue;
+    
+            isPref = True;
+    
+            for i in range( len ( pref ) ):
+                
+               
+                if pref[ i ] != word[ i ]:
+                    isPref = False;
+                    break;
+                    
+           
+            if isPref:
+                count += 1;
+                
+       
+        return count;
+        
